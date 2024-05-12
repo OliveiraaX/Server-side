@@ -40,13 +40,13 @@ Representações simples codificadas por URL de sequências de travessia usando 
     - Barra invertida — `%c0%5c`, `%c0%80%5c`, e assim por diante
 
 Se o aplicativo está tentando limpar a entrada do usuário removendo sequências de travessia e não aplica este filtro recursivamente, pode ser possível contornar o filtro colocando uma sequência dentro de outra. Por exemplo:
-	-  .....//
-	- ..../
-	- ..../
-	- ....\
+	.....//
+	..../
+	..../
+	....\
 
 
 Tente colocar um byte nulo codificado por URL no final do nome do arquivo solicitado, seguido por um tipo de arquivo que o aplicativo aceita. Por exemplo:
-	- ../../../etc/passwd%00.jpg
+	../../../etc/passwd%00.jpg
 
 
