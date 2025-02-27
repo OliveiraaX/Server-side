@@ -80,3 +80,5 @@ A inclusão de arquivos locais (LFI) é uma vulnerabilidade comum em aplicaçõe
    - Exploração: Inserir uma carga útil LFI em uma entrada de banco de dados que será usada posteriormente por outra funcionalidade para extrair um arquivo.
    - Exemplo de código: Depende do contexto específico da aplicação.
 
+6. Data:
+   - Exemplo de URL: `http://teste.com.br/index.php?language=data:text/plant,123`
